@@ -106,7 +106,12 @@ for index in 0..<cart.count {
     ------------------------------------------------------
  */
 
-
+for index in 0..<cart.count {
+    
+    print("------------------- \(index+1) -------------------------------")
+    print("- name: \(cart[index].0)")
+    print("- price: \(cart[index].1) \(cart[index].2) \n\n")
+}
 
 
 
@@ -128,7 +133,16 @@ for index in 0..<cart.count {
  */
 
 
+print("--------------------------------while---------------------------\n\n\n")
 
+var counter = 0
+
+repeat {
+    print("------------------- \(counter+1) -------------------------------")
+    print("- name: \(cart[counter].0)")
+    print("- socket: \(cart[counter].3)\n\n")
+    counter += 1
+} while counter<cart.count
 
 
 /*
