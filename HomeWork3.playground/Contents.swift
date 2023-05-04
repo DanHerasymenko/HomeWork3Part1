@@ -55,9 +55,14 @@ let cart: [ProductInfo] = [
     ------------------------------------------------------
  */
 
-
-
-
+for index in 0..<cart.count {
+    
+    print("------------------- \(index+1) -------------------------------")
+    print("- name: \(cart[index].0)")
+    print("- price: \(cart[index].1) \(cart[index].2)")
+    print("- socket: \(cart[index].3)")
+    print("- proccessor: \(cart[index].4)\n\n")
+}
 
 /*
  
@@ -77,8 +82,12 @@ let cart: [ProductInfo] = [
  */
 
 
-
-
+for index in 0..<cart.count {
+    
+    print("------------------- \(index+1) -------------------------------")
+    print("- name: \(cart[index].0)")
+    print("- proccessor: \(cart[index].4)\n\n")
+}
 
 /*
  
