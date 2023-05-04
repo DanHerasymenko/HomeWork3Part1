@@ -234,7 +234,27 @@ for index in 0..<cart.count {
     
  */
 
+print("-------------------------------- 1.6 --------------------------------\n\n\n")
 
+
+for index in 0..<cart.count {
+    
+    switch cart[index].4 {
+    case "Intel":
+        print(" ------------------- \(index+1) -------------------------------")
+        print("- name: \(cart[index].0)")
+        print("- price: \(cart[index].1) \(cart[index].2)")
+        print("------------------------------------------------------\n")
+    case "AMD":
+        print(" ------------------- \(index+1) -------------------------------")
+        print("- name: \(cart[index].0)")
+        print("- price: \(cart[index].1) \(cart[index].2)")
+        print("------------------------------------------------------\n")
+    default:
+        print("error")    }
+    
+    
+}
 
 
 
