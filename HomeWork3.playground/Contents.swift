@@ -506,7 +506,18 @@ var myMotherBoard = MotherBoard(socket: "sAM4", proccessor: .intel)
  
  */
 
+class Product {
+    
+    var name: String = "name"
+    var price: Double = 0.00
+    var currency: Currency = .uah
+    var motherBoard: MotherBoard = .init(socket: "socket", proccessor: .amd)
+    
+}
 
-
-
+var myProduct = Product()
+myProduct.currency = .eur
+myProduct.name = "123"
+myProduct.price = 222.33
+myProduct.motherBoard = MotherBoard(socket: "someName", proccessor: .intel)
 
