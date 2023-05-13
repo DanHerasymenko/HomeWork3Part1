@@ -379,6 +379,36 @@ productsWithLimitedProce(maxPrice: 4000)
  */
 
 
+print("-------------------------------- 2.3 --------------------------------\n\n\n")
+
+//            print("\(index+1). Name: \(cart[index].0), price: \(cart[index].1) \(cart[index].2)")
+
+
+func productsWithMaxPrice (proccessor: String) -> ProductInfo {
+    
+    var maxProccessorPriceArray: [Double] = []
+    var maxPriceProduct: ProductInfo = cart[1]
+    
+    print(" ------------------- Найдорожчий товар за процесором \(proccessor) -------------------------------")
+    for index in 0..<cart.count {
+        
+        if proccessor == cart[index].4 {
+            maxProccessorPriceArray.append(cart[index].1)
+        }
+    }
+    
+    for index in 0..<cart.count {
+        
+        if cart[index].1 == maxProccessorPriceArray.max()! {
+            maxPriceProduct = cart[index]
+        }
+    }
+    return maxPriceProduct
+    
+}
+
+let result = productsWithMaxPrice(proccessor: "AMD")
+print("Назва товару: \(result.0), ціна: \(result.1) \(result.2)")
 
 
 
