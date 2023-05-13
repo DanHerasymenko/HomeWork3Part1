@@ -431,7 +431,12 @@ print("Назва товару: \(result.0), ціна: \(result.1) \(result.2)")
  */
 
 
+enum ProccesorType {
+    case intel
+    case amd
+}
 
+let myProccesor = ProccesorType.amd
 
 
 
@@ -449,6 +454,13 @@ print("Назва товару: \(result.0), ціна: \(result.1) \(result.2)")
  */
 
 
+enum Currency {
+    case uah
+    case usd
+    case eur
+}
+
+let myCurrency: Currency = .usd
 
 
 
@@ -471,9 +483,12 @@ print("Назва товару: \(result.0), ціна: \(result.1) \(result.2)")
  
  */
 
+struct MotherBoard {
+    var socket: String
+    var proccessor: ProccesorType
+}
 
-
-
+var myMotherBoard = MotherBoard(socket: "sAM4", proccessor: .intel)
 
 
 /*
